@@ -229,7 +229,7 @@
 
               <section id="services" class="services">
 
-                  <h2 class="title">Services</h2>
+                <h2 class="title">Services</h2>
                 <p>
                   Here u will get the best mastering quality with low budget. Awesome for new artists
 
@@ -260,13 +260,26 @@
                   <li>
 
                     <figure>
-                      <img src="img/mixing.jpg" width="425" height="230" alt="Mixing" class="servicepicture1">
-
+                      <div class="hovereffect">
+                        <img src="img/mixing.jpg" width="425" height="230" alt="Mixing"
+                          class="img-responsive servicepicture1">
+                        <div class="overlay">
+                          <h2>Prices In USD</h2>
+                          <p class="info">1 Track : 25U$ | 3 Tracks : 50U$</p>
+                        </div>
+                      </div>
                     </figure>
                   </li>
                   <li>
                     <figure>
-                      <img src="img/mastering.jpg" width="425" height="230" alt="Mastering" class="servicepicture2">
+                      <div class="hovereffect">
+                        <img src="img/mastering.jpg" width="425" height="230" alt="Mixing"
+                          class="img-responsive servicepicture1">
+                        <div class="overlay">
+                          <h2>Prices In USD</h2>
+                          <p class="info">1 Track : 25U$ | 3 Tracks : 50U$</p>
+                        </div>
+                      </div>
                     </figure>
                   </li>
                 </ul>
@@ -302,14 +315,24 @@
               </footer>
 
               <script src="https://code.jquery.com/jquery-3.5.1.js"
-              integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-            <script	type="text/javascript">
-                $('section').mousemove(function(e){
-                  var moveY = (e.pageY * -1/15)
-                  var moveX = (e.pageX * -1/15)
-                  $(this).css('background-position', moveX + 'px '+ moveY + 'px')
+                integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+              <script type="text/javascript">
+                $('section').mousemove(function (e) {
+                  var moveY = (e.pageY * -1 / 15)
+                  var moveX = (e.pageX * -1 / 15)
+                  $(this).css('background-position', moveX + 'px ' + moveY + 'px')
                 })
-            </script>
+              </script>
+
+              <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <div class="hovereffect">
+                  <img class="img-responsive" src="http://placehold.it/350x200" alt="">
+                  <div class="overlay">
+                    <h2>Hover effect 9</h2>
+                    <a class="info" href="#">link here</a>
+                  </div>
+                </div>
+              </div>
 
 </body>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
