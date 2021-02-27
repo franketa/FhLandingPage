@@ -1,0 +1,76 @@
+ <!DOCTYPE html>
+ <html lang="en" dir="ltr">
+   <head>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+     <meta charset="utf-8">
+     <title>FH Prod | Form</title>
+     <link rel="stylesheet" href="css/master4.css">
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap" rel="stylesheet">
+   </head>
+   <body>
+<!   Header -->
+
+<header class="header">
+  <h1>
+    <img src="img/logo02.png" class="logo" width="650" height="350" alt="Principal Logo ">
+  </h1>
+</header>
+
+<section class="formulario" >
+
+
+<p class="contactform">Contact Form</p>
+<form class="main-form needs-validation" action="submit.php" method="post">
+  <div class="row">
+    <div class="col">
+      <div class="form-group">
+                  <label for="fullname">Full Name</label>
+                  <input type="text" name="fullname" id="fullname" class="form-control" required </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="form-group">
+                  <label for="email">E-mail</label>
+                  <input type="text" name="email" id="email" class="form-control" required </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+<div class="form-group">
+            <label for="consultation">Consultation</label>
+            <textarea type="text" name="consultation" id="consultation" class="form-control" required  </textarea>
+</textarea>
+<br>
+<button class="btn btn-success btn-lg btn-block" type="submit" value="Submit" >Submit</button>
+</form>
+
+</section>
+<br>
+<br>
+<br>
+<br>
+<button class="btn btn-success btn-lg" type="button" id="bt" onclick="myFunction()" >Back To Home</button>
+<script>
+  function myFunction() {
+    location.href = "index.html";
+  }
+</script>
+<script>
+  var form = document.querySelector('.needs-validation');
+  form.add.EventListener('submit', function(event) {
+    if (form.checkValidity() === false){
+      event.preventDefault ();
+      event.stopPropagation ();
+    }
+    form.classList.add('was-validated');
+  })
+</script>
+   </body>
+ </html>

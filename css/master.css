@@ -1,0 +1,282 @@
+/*
+---STYLE GUIDE---
+
+0.RESET
+1.LAYOUT
+2.GENERIC ITEMS
+3.PARTS OF THE WEB
+4.LIST
+5.FORM
+6.ANIMATION
+------------------
+COLORS
+color1 : #2c3e56;
+color2 : #34495e;
+color3 : #3498db;
+color4 : #fff;
+color5 : #6199B8;
+
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+
+
+/* --- COLORS ---
+
+/* 0 RESET */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+ /*fonts TO CALL 
+FONT1: 'futura-pt-cond-11'
+
+futura-pt-13
+
+/* 1 LAYOUT */
+html {scroll-behavior: smooth;}
+
+h2 {text-align: center;}
+.list-services {display: flex; align-items: center; justify-content: center; }
+ .list-services figure {padding: 10px;  }
+  .list-work {display: flex; align-items: center; justify-content: center;}
+  .list-work2 {display: flex; align-items: center; justify-content: center;}
+   .list-work figure {padding: 30px	}
+	 .list-work2 figure {padding: 30px;}
+
+
+ .navbar {font: 17px 'Nunito'; background: #ACCBD3; color: white;}
+ .nav-link {margin-right: 7vh; color: white; }
+ .navbar-brand.mb-0.h1 {margin-left: 9vh; font: 25px 'Nunito';}
+ /* 2 GENERIC ITEMS */
+.title {margin-bottom: 40px; font: 60px 'Stint Ultra Condensed'; text-transform: uppercase;}
+.p {margin-bottom: 40px; }
+ .contain {padding-left: 10vh; padding-right: 10vh;}
+/* 3 PARTS OF THE WEB */
+.content {padding: 80px 0;}
+.who {background: #fff; color: black; border-bottom: 2px solid black; font: 20px 'futura-pt-13';
+	border-top: 2px solid black;  }
+ .who p {max-width: 1055px; margin: auto;}
+
+ .mywork {background: url(/img/blackbg.jpg) ; background-size: cover ;color: #fff; border-bottom: 2px solid white; text-align: center; font: 20px 'futura-pt-13'; }
+
+ .services {background: linear-gradient(0deg, rgba(0, 104, 64, 0.1), rgba(1, 131, 51, 0.1)), url(/img/whitebg4.png); background-position-x: 8rem ; color: #000000; border-bottom: 2px solid #000000; padding-top: 3vh; }
+ .services .title {color: #000000}
+ .servicepicture1 {margin-right: 5rem ;}
+ .contact {background: linear-gradient(0deg, rgba(0, 0, 0, 0.305), rgba(0, 0, 0, 0.301)), url(/img/blackbg6.jpg) ; opacity: 1 ; border-bottom: 1px solid black;
+ color: #fff; text-align: left; font: 20px 'futura-pt-13'; padding: 10vh;}
+  .container p {max-width: 450px;}
+footer {background: radial-gradient(ellipse at bottom left, rgba(104, 128, 138, 0.4) 10%, rgba(138, 114, 76, 0) 40%), linear-gradient(to bottom, rgba(57, 173, 219, .25), rgba(42, 60, 87, 0.4)), linear-gradient(135deg, #670d10, #092756);
+ color: #fff; position: sticky; width: 100%; text-align: center; }
+.carousel-item {
+	max-height: 700vh;
+	
+}
+.itemcar1 {position: relative; height: 70vh;}
+.itemcar2 {position: relative; height: 70vh;}
+.itemcar3 {position: relative; height: 70vh;}
+.sliderino {display: none; max-width: 100%; background-color: rgb(70, 70, 70);}
+.services p {margin-left: 45px; margin-right: 45px; font: 20px 'futura-pt-13';}
+
+
+
+@media screen and (min-width: 1023px) {
+	.sliderino {
+	  display: block;
+	}
+}
+
+/* 4 LIST */
+
+/* 5 FORM */
+
+/* 6 ANIMATION */
+/*boton contact me*/
+.grid figure {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin: 10px 1%;
+	text-align: center;
+	cursor: pointer;
+}
+
+.grid figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	max-width: 100%;
+	opacity: 1
+}
+
+.grid figure figcaption {
+	padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+figure.effect-zoe figcaption {
+	top: auto;
+	bottom: 0;
+	padding: 1em;
+	height: 3.75em;
+	background: rgb(53, 53, 53);
+	color: #fff;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(0,100%,0);
+	transform: translate3d(0,100%,0);
+}
+
+figure.effect-zoe h2 {
+	float: left;
+}
+
+figure.effect-zoe p.icon-links a {
+	float: right;
+	color: #3c4a50;
+	font-size: 1.4em;
+}
+
+figure.effect-zoe:hover p.icon-links a:hover,
+figure.effect-zoe:hover p.icon-links a:focus {
+	color: #252d31;
+}
+
+figure.effect-zoe p.description {
+	position: absolute;
+	bottom: 6em;
+	padding: 2em;
+	color: #fff;
+	text-transform: none;
+	font-size: 90%;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s;
+	transition: opacity 0.35s;
+
+}
+
+figure.effect-zoe h2,
+figure.effect-zoe p.icon-links a {
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(0,200%,0);
+	transform: translate3d(0,200%,0);
+}
+
+figure.effect-zoe p.icon-links a span::before {
+	display: inline-block;
+	padding: 8px 10px;
+	font-family: 'feathericons';
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-eye::before {
+	content: '\e000';
+}
+
+.icon-paper-clip::before {
+	content: '\e001';
+}
+
+.icon-heart::before {
+	content: '\e024';
+}
+
+figure.effect-zoe h2 {
+	display: inline-block;
+}
+
+figure.effect-zoe:hover p.description {
+	opacity: 1;
+}
+
+figure.effect-zoe:hover figcaption,
+figure.effect-zoe:hover h2,
+figure.effect-zoe:hover p.icon-links a {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-zoe:hover h2 {
+	-webkit-transition-delay: 0.05s;
+	transition-delay: 0.05s;
+}
+
+figure.effect-zoe:hover p.icon-links a:nth-child(3) {
+	-webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s;
+}
+
+figure.effect-zoe:hover p.icon-links a:nth-child(2) {
+	-webkit-transition-delay: 0.15s;
+	transition-delay: 0.15s;
+}
+
+figure.effect-zoe:hover p.icon-links a:first-child {
+	-webkit-transition-delay: 0.2s;
+	transition-delay: 0.2s;
+}
+
