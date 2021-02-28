@@ -81,7 +81,7 @@ futura-pt-13
 html {scroll-behavior: smooth;}
 
 h2 {text-align: center;}
-.list-services {display: flex; align-items: center; justify-content: center; }
+.list-services {display: flex; align-items: center; justify-content: center; width: 95% }
  .list-services figure {padding: 10px;  }
   .list-work {display: flex; align-items: center; justify-content: center;}
   .list-work2 {display: flex; align-items: center; justify-content: center;}
@@ -94,7 +94,7 @@ h2 {text-align: center;}
  .navbar-brand.mb-0.h1 {margin-left: 9vh; font: 25px 'Nunito';}
  /* 2 GENERIC ITEMS */
 .title {margin-bottom: 40px; font: 60px 'Stint Ultra Condensed'; text-transform: uppercase;}
-.p {margin-bottom: 40px; }
+.p {margin-bottom: 30px; }
  .contain {padding-left: 10vh; padding-right: 10vh;}
 /* 3 PARTS OF THE WEB */
 .content {padding: 80px 0;}
@@ -106,7 +106,7 @@ h2 {text-align: center;}
 
  .services {background: linear-gradient(0deg, rgba(0, 104, 64, 0.1), rgba(1, 131, 51, 0.1)), url(/img/whitebg4.png); background-position-x: 8rem ; color: #000000; border-bottom: 2px solid #000000; padding-top: 3vh; }
  .services .title {color: #000000}
- .servicepicture1 {margin-right: 5rem ;}
+ .servicepicture1 {padding-right: rem ;}
  .contact {background: linear-gradient(0deg, rgba(0, 0, 0, 0.305), rgba(0, 0, 0, 0.301)), url(/img/blackbg6.jpg) ; opacity: 1 ; border-bottom: 1px solid black;
  color: #fff; text-align: left; font: 20px 'futura-pt-13'; padding: 10vh;}
   .container p {max-width: 450px;}
@@ -135,7 +135,7 @@ footer {background: radial-gradient(ellipse at bottom left, rgba(104, 128, 138, 
 /* 5 FORM */
 
 /* 6 ANIMATION */
-/*boton contact me*/
+/*Hover of work images*/
 .grid figure {
 	position: relative;
 	float: left;
@@ -156,7 +156,7 @@ footer {background: radial-gradient(ellipse at bottom left, rgba(104, 128, 138, 
 .grid figure figcaption {
 	padding: 2em;
 	color: #fff;
-	text-transform: uppercase;
+	text-transform: none;
 	font-size: 1.25em;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
@@ -180,7 +180,7 @@ figure.effect-zoe figcaption {
 	bottom: 0;
 	padding: 1em;
 	height: 3.75em;
-	background: rgb(53, 53, 53);
+	background: rgb(0, 0, 0);
 	color: #fff;
 	-webkit-transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;
@@ -294,7 +294,7 @@ figure.effect-zoe:hover p.icon-links a:first-child {
   
   .hovereffect .overlay {
 	cursor: pointer;
-	width: 84.3%;
+	width: 100%;
 	height: 100%;
 	position: absolute;
 	overflow: hidden;
