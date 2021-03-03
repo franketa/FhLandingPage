@@ -198,6 +198,7 @@ footer {background: radial-gradient(ellipse at bottom left, rgba(104, 128, 138, 
 	background-color: transparent;
 	padding: 15% 0 10px 0;
 	text-align: left;
+	visibility: hidden;
   }
   
   .hovereffect .overlay:before {
