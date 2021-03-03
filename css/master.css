@@ -81,15 +81,16 @@ futura-pt-13
 html {scroll-behavior: smooth;}
 
 h2 {text-align: center;}
-.list-services {display: flex; align-items: center; justify-content: center; width: 95% }
+
+.list-services {display: flex; align-items: center; justify-content: center; }
  .list-services figure {padding: 10px;  }
   .list-work {display: flex; align-items: center; justify-content: center;}
   .list-work2 {display: flex; align-items: center; justify-content: center;}
-   .list-work figure {padding: 30px	}
-	 .list-work2 figure {padding: 30px;}
+   .list-work figure {padding: 50px	}
+	 .list-work2 figure {padding: 50px;}
 
 
- .navbar {font: 17px 'Nunito'; background: #ACCBD3; color: white;}
+ .navbar {font: 17px 'Nunito'; color: white;}
  .nav-link {margin-right: 7vh; color: white; }
  .navbar-brand.mb-0.h1 {margin-left: 9vh; font: 25px 'Nunito';}
  /* 2 GENERIC ITEMS */
@@ -97,30 +98,32 @@ h2 {text-align: center;}
 .p {margin-bottom: 30px; }
  .contain {padding-left: 10vh; padding-right: 10vh;}
 /* 3 PARTS OF THE WEB */
-.content {padding: 80px 0;}
+.content {padding: 80px 0 20px 0;}
 .who {background: #fff; color: black; border-bottom: 2px solid black; font: 20px 'futura-pt-13';
 	border-top: 2px solid black;  }
- .who p {max-width: 1055px; margin: auto;}
+ .who p {max-width: 1055px; margin: auto; padding-bottom: 3rem;}
 
- .mywork {background: url(/img/blackbg.jpg) ; background-size: cover ;color: #fff; border-bottom: 2px solid white; text-align: center; font: 20px 'futura-pt-13'; }
-
+ .mywork2 {background: linear-gradient( 110.3deg,  rgba(52, 54, 56, 0.616) 4.3%, rgba(20, 189, 175, 0.534) 96.7% ),	 url(/img/blackbg.jpg); background-size: cover ;color: #fff; border-bottom: 2px solid white; text-align: center; font: 20px 'futura-pt-13'; }
+.mywork1 { padding-bottom: 50px ; color: #fff ;text-align: center; font: 20px 'futura-pt-13'; background:  #000; background-image: linear-gradient( 110.3deg,  rgb(52, 54, 56) 4.3%, rgb(20, 138, 128) 96.7% );}
  .services {background: linear-gradient(0deg, rgba(0, 104, 64, 0.1), rgba(1, 131, 51, 0.1)), url(/img/whitebg4.png); background-position-x: 8rem ; color: #000000; border-bottom: 2px solid #000000; padding-top: 3vh; }
  .services .title {color: #000000}
- .servicepicture1 {padding-right: rem ;}
- .contact {background: linear-gradient(0deg, rgba(0, 0, 0, 0.305), rgba(0, 0, 0, 0.301)), url(/img/blackbg6.jpg) ; opacity: 1 ; border-bottom: 1px solid black;
- color: #fff; text-align: left; font: 20px 'futura-pt-13'; padding: 10vh;}
+ .contact {background: url(/img/blackbg6.jpg) ; border-bottom: 1px solid black; background-size: cover;
+ color: #fff; text-align: left; font: 20px 'futura-pt-13'; padding-bottom: 3rem; padding-top: 3rem;}
   .container p {max-width: 450px;}
 footer {background: radial-gradient(ellipse at bottom left, rgba(104, 128, 138, 0.4) 10%, rgba(138, 114, 76, 0) 40%), linear-gradient(to bottom, rgba(57, 173, 219, .25), rgba(42, 60, 87, 0.4)), linear-gradient(135deg, #670d10, #092756);
  color: #fff; position: sticky; width: 100%; text-align: center; }
 .carousel-item {
 	max-height: 700vh;
-	
+
 }
+
+
+
 .itemcar1 {position: relative; height: 70vh;}
 .itemcar2 {position: relative; height: 70vh;}
 .itemcar3 {position: relative; height: 70vh;}
 .sliderino {display: none; max-width: 100%; background-color: rgb(70, 70, 70);}
-.services p {margin-left: 45px; margin-right: 45px; font: 20px 'futura-pt-13';}
+.services p {padding-left: 45px; padding-right: 45px; font: 20px 'futura-pt-13';}
 
 
 
@@ -136,153 +139,26 @@ footer {background: radial-gradient(ellipse at bottom left, rgba(104, 128, 138, 
 
 /* 6 ANIMATION */
 /*Hover of work images*/
-.grid figure {
-	position: relative;
-	float: left;
-	overflow: hidden;
-	margin: 10px 1%;
-	text-align: center;
-	cursor: pointer;
+@media screen and (max-width: 1023px) {
+	.navbar:not(.top-nav-collapse) {
+		background: #1C2331!important;
+	}
 }
-
-.grid figure img {
-	position: relative;
-	display: block;
-	min-height: 100%;
-	max-width: 100%;
-	opacity: 1
+.bg-transparent{
+	transition: 0.5s ease;
+	background: #000 !important;
 }
-
-.grid figure figcaption {
-	padding: 2em;
-	color: #fff;
-	text-transform: none;
-	font-size: 1.25em;
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-}
-
-.grid figure figcaption::before,
-.grid figure figcaption::after {
-	pointer-events: none;
-}
-
-.grid figure figcaption,
-.grid figure figcaption > a {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
-figure.effect-zoe figcaption {
-	top: auto;
-	bottom: 0;
-	padding: 1em;
-	height: 3.75em;
-	background: rgb(0, 0, 0);
-	color: #fff;
-	-webkit-transition: -webkit-transform 0.35s;
-	transition: transform 0.35s;
-	-webkit-transform: translate3d(0,100%,0);
-	transform: translate3d(0,100%,0);
-}
-
-figure.effect-zoe h2 {
-	float: left;
-}
-
-figure.effect-zoe p.icon-links a {
-	float: right;
-	color: #3c4a50;
-	font-size: 1.4em;
-}
-
-figure.effect-zoe:hover p.icon-links a:hover,
-figure.effect-zoe:hover p.icon-links a:focus {
-	color: #252d31;
-}
-
-figure.effect-zoe p.description {
-	position: absolute;
-	bottom: 6em;
-	padding: 2em;
-	color: #fff;
-	text-transform: none;
-	font-size: 90%;
-	opacity: 0;
-	-webkit-transition: opacity 0.35s;
-	transition: opacity 0.35s;
-
-}
-
-figure.effect-zoe h2,
-figure.effect-zoe p.icon-links a {
-	-webkit-transition: -webkit-transform 0.35s;
-	transition: transform 0.35s;
-	-webkit-transform: translate3d(0,200%,0);
-	transform: translate3d(0,200%,0);
-}
-
-figure.effect-zoe p.icon-links a span::before {
-	display: inline-block;
-	padding: 8px 10px;
-	font-family: 'feathericons';
-
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-
-.icon-eye::before {
-	content: '\e000';
-}
-
-.icon-paper-clip::before {
-	content: '\e001';
-}
-
-.icon-heart::before {
-	content: '\e024';
-}
-
-figure.effect-zoe h2 {
-	display: inline-block;
-}
-
-figure.effect-zoe:hover p.description {
-	opacity: 1;
-}
-
-figure.effect-zoe:hover figcaption,
-figure.effect-zoe:hover h2,
-figure.effect-zoe:hover p.icon-links a {
-	-webkit-transform: translate3d(0,0,0);
-	transform: translate3d(0,0,0);
-}
-
-figure.effect-zoe:hover h2 {
-	-webkit-transition-delay: 0.05s;
-	transition-delay: 0.05s;
-}
-
-figure.effect-zoe:hover p.icon-links a:nth-child(3) {
-	-webkit-transition-delay: 0.1s;
-	transition-delay: 0.1s;
-}
-
-figure.effect-zoe:hover p.icon-links a:nth-child(2) {
-	-webkit-transition-delay: 0.15s;
-	transition-delay: 0.15s;
-}
-
-figure.effect-zoe:hover p.icon-links a:first-child {
-	-webkit-transition-delay: 0.2s;
-	transition-delay: 0.2s;
+.bg-transparent.scrolled {
+	transition: 0.5s ease;
+	background: #000 !important;
 }
 /* services pictures hovers */
 
-.hovereffect {
-	cursor: pointer;
+
+
+  /* hover mywork*/
+
+  .hovereffect {
 	width: 100%;
 	height: 100%;
 	float: left;
@@ -290,85 +166,86 @@ figure.effect-zoe:hover p.icon-links a:first-child {
 	position: relative;
 	text-align: center;
 	cursor: default;
+
   }
   
   .hovereffect .overlay {
-	cursor: pointer;
 	width: 100%;
 	height: 100%;
 	position: absolute;
 	overflow: hidden;
+	top: 0;
 	left: 0;
-	background-color: rgba(29, 26, 26, 0.7);
-	top: -200px;
-	opacity: 0;
-	filter: alpha(opacity=0);
-	-webkit-transition: all 0.1s ease-out 0.5s;
-	transition: all 0.1s ease-out 0.5s;
-  }
-  
-  .hovereffect:hover .overlay {
-	cursor: pointer;
-	opacity: 1;
-	filter: alpha(opacity=100);
-	top: 0px;
-	-webkit-transition-delay: 0s;
-	transition-delay: 0s;
+	padding: 3em;
+	text-align: left;
   }
   
   .hovereffect img {
-	cursor: pointer;
 	display: block;
 	position: relative;
+	max-width: none;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.45s;
+	transition: opacity 0.35s, transform 0.45s;
+	-webkit-transform: translate3d(-40px,0,0);
+	transform: translate3d(-40px,0,0);
   }
   
   .hovereffect h2 {
 	text-transform: uppercase;
 	color: #fff;
-	text-align: center;
 	position: relative;
 	font-size: 17px;
-	padding: 10px;
-	background: rgba(0, 0, 0, 0.6);
-	-webkit-transform: translateY(-200px);
-	-ms-transform: translateY(-200px);
-	transform: translateY(-200px);
-	-webkit-transition: all ease-in-out 0.1s;
-	transition: all ease-in-out 0.1s;
-	-webkit-transition-delay: 0.3s;
-	transition-delay: 0.3s;
-  }
-  
-  .hovereffect:hover h2 {
-	-webkit-transform: translateY(0px);
-	-ms-transform: translateY(0px);
-	transform: translateY(0px);
-	-webkit-transition-delay: 0.3s;
-	transition-delay: 0.3s;
-  }
-  
-  .hovereffect .info {
-	  text-align: justify;
-	display: inline-block;
-	text-decoration: none;
-	padding: 7px 14px;
-	margin: 50px 0 0 0;
 	background-color: transparent;
-	-webkit-transform: translateY(-200px);
-	-ms-transform: translateY(-200px);
-	transform: translateY(-200px);
-	color: #fff;
-	-webkit-transition: all ease-in-out 0.3s;
-	transition: all ease-in-out 0.3s;
+	padding: 15% 0 10px 0;
+	text-align: left;
   }
   
-
+  .hovereffect .overlay:before {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	bottom: 35px;
+	left: 20px;
+	border: 1px solid rgb(0, 255, 213);
+	content: '';
+	opacity: 0;
+	filter: alpha(opacity=0);
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.45s;
+	transition: opacity 0.35s, transform 0.45s;
+	-webkit-transform: translate3d(-20px,0,0);
+	transform: translate3d(-20px,0,0);
+  }
   
-  .hovereffect:hover .info {
-	-webkit-transform: translateY(0px);
-	-ms-transform: translateY(0px);
-	transform: translateY(0px);
-	color: #fff;
-	-webkit-transition-delay: 0.3s;
-	transition-delay: 0.3s;
+  .hovereffect a, .hovereffect p {
+	color: #FFF;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.45s;
+	transition: opacity 0.35s, transform 0.45s;
+	-webkit-transform: translate3d(-10px,0,0);
+	transform: translate3d(-10px,0,0);
+  }
+  
+  .hovereffect:hover img {
+	opacity: 0.6;
+	filter: alpha(opacity=60);
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+  }
+  
+  .hovereffect:hover .overlay:before,
+  .hovereffect:hover a, .hovereffect:hover p {
+	opacity: 1;
+	filter: alpha(opacity=100);
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+  }
+
+  .hovereffect:hover img {
+	filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" /><feGaussianBlur stdDeviation="3" /></filter></svg>#filter');
+	filter: grayscale(1) blur(3px);
+	-webkit-filter: grayscale(1) blur(3px);
+	-webkit-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	transform: scale(1.2);
   }

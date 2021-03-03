@@ -6,6 +6,8 @@
   <title>FH Prod | Home</title>
   <link rel="stylesheet" href="css/master.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="/css/flickity.css" media="screen">
+  <script src="/js/flickity.pkgd.js"></script>
 
   <link
     href="https://blogfonts.com/css/aWQ9MTUzMjQ5JnN1Yj0yNDkmYz1mJnR0Zj1GdXR1cmFQVERlbWkub3RmJm49ZnV0dXJhLXB0LTEz/Futura PT.otf"
@@ -32,7 +34,7 @@
 
 
     <! Navitagion!>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-transparent scrolling-navbar">
         <div class="container-fluid navi">
           <a class="navbar-brand mb-0 h1" href="#sliderino" alt="5 USD Mastering and Mixing">5USD Mastering! </a>
           <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
@@ -59,7 +61,7 @@
 
       <! Image Slider!>
         <section class="sliderino" id="sliderino">
-          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-pause="false">
             <ol class="carousel-indicators">
               <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
               <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -88,14 +90,6 @@
                 </div>
               </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
           </div>
         </section>
 
@@ -113,90 +107,105 @@
               Im a Music Producer and DJ, Based in Argentina, Buenos Aires. 23 years old. Sound engineer. More
               than 5 years experience with music production and music in general. Don't hesitate to ask your questions.
             </p>
+
+            <!-- Flickity HTML init -->
+            <div class="carousel" data-flickity='{ "autoPlay": true, "wrapAround": true, "pageDots": false }'>
+              <div class="carousel-cell"><img src="img/ableton-1-logo.png" width="300" height="200"
+                  alt="Software Ableton"></div>
+              <div class="carousel-cell"><img src="img/fl-slider.png" width="200" height="200" alt=""></div>
+              <div class="carousel-cell"><img src="img/balkan-logo.jpg" width="300" height="200" alt=""></div>
+              <div class="carousel-cell"><img src="img/git2.png" width="300" height="200" alt=""></div>
+              <div class="carousel-cell"><img src="img/git 3.jpeg" width="300" height="200" alt=""></div>
+            </div>
           </section>
           <!MyWork---!>
 
 
-            <section id="work" class="content mywork">
+            <section id="work" class="content mywork1">
               <h2 class="title">
-                My Work
+                Check some of my work!
               </h2>
-              <p>
-                In this section, you will find some types of the work that i did!
-              </p>
-              <p></p>
-              From big support of Hernan Cattaneo to my new releases on Balkan Connection.
-              </p>
-              <p>Passing through my first Tracks & Remixes (Gina's Dream and Unknowk Saschienne Remix)</p>
+            </section>
+
+
+
+
+
+
+            <section id="work" class="content mywork2">
               <ul class="list-work">
                 <li>
-                  <a
-                    href="https://soundcloud.com/stardiverecords/darren-bray-soul-food-franco-helguera-remix-star-dive-records-preview">
-                    <div class="grid">
-                      <figure class="effect-zoe">
-                        <img src="img/mywork1.jpg" class="soulfoodpic" width="350" height="350" alt="SoulFood EP">
-                  </a>
-                  <figcaption>
-                    <h2>SoulFood | Sd Rec</h2>
-                    <a
-                      href="https://soundcloud.com/stardiverecords/darren-bray-soul-food-franco-helguera-remix-star-dive-records-preview">
-                      <p class="description">Hernan Cattaneo: "Awesome Remixes guys! a lot of groove there". Like
-                        Charly... Say no more</p>
-                    </a>
-                  </figcaption>
-                  </figure>
+                  <div class="hovereffect">
+                    <figure>
+                      <a
+                        href="https://soundcloud.com/stardiverecords/darren-bray-soul-food-franco-helguera-remix-star-dive-records-preview">
+                        <img src="img/mywork1.jpg" class="soulfoodpic img-responsive" width="350" height="350"
+                          alt="SoulFood EP">
+                      </a>
+                    </figure>
+                    <div class="overlay">
+                      <h2>Effect 11</h2>
+                      <p>
+                        <a href="#">LINK HERE</a>
+                      </p>
+                    </div>
+                  </div>
+                  </div>
+
                 </li>
                 <li>
-                  <a href="https://soundcloud.com/bcsa/franco-helguera-terrateniente-balkan-connection-south-america">
-                    <div class="grid">
-                      <figure class="effect-zoe">
+                  <div class="hovereffect">
+                    <figure>
+                      <a
+                        href="https://soundcloud.com/bcsa/franco-helguera-terrateniente-balkan-connection-south-america">
                         <img src="img/balkan.jpg" class="balkan" width="350" height="350" alt="Balkan Connection EP">
-                  </a>
-                  <figcaption>
-                    <h2>Terrateniente | FH</h2>
-                    <a href="https://soundcloud.com/bcsa/franco-helguera-terrateniente-balkan-connection-south-america">
-                      <p class="description">Big Label, Big Ep. Another dream came true! Balkan Connection Released my
-                        track
-                        Terrateniente - (Original Mix).
+                      </a>
+                    </figure>
+                    <div class="overlay">
+                      <h2>Effect 11</h2>
+                      <p>
+                        <a href="#">LINK HERE</a>
                       </p>
-                    </a>
-                  </figcaption>
-                  </figure>
+                    </div>
+                  </div>
+                  </div>
+
                 </li>
               </ul>
               <ul class="list-work2">
                 <li>
-                  <a href="https://soundcloud.com/balikglow/unknown-saschienne-private-edit">
-                    <div class="grid">
-                      <figure class="effect-zoe">
+                  <div class="hovereffect">
+                    <figure>
+                      <a href="https://soundcloud.com/balikglow/unknown-saschienne-private-edit">
                         <img src="img/funke6.jpg" class="funke4" width="350" height="350" alt="Sascha Funke">
-                  </a>
-                  <figcaption>
-                    <h2>Unknown |<span> FH Edit</span></h2>
-                    <a href="https://soundcloud.com/balikglow/unknown-saschienne-private-edit">
-                      <p class="description">Some influences (my teacher Mario Puccio) helped me to select what track
-                        edit.
-                        Amazing Election. Two sides of the same face but totally in another genre! Check it out!
+                      </a>
+                    </figure>
+                    <div class="overlay">
+                      <h2>Effect 11</h2>
+                      <p>
+                        <a href="#">LINK HERE</a>
                       </p>
-                    </a>
-                  </figcaption>
-                  </figure>
+                    </div>
+                  </div>
+                  </div>
+
                 </li>
                 <li>
-                  <a href="https://soundcloud.com/balikglow/ginas-dream-original-mix">
-                    <div class="grid">
-                      <figure class="effect-zoe">
+                  <div class="hovereffect">
+                    <figure>
+                      <a href="https://soundcloud.com/balikglow/ginas-dream-original-mix">
                         <img src="img/ginadream.jpeg" class="ginadream" width="350" height="350" alt="Gina's Dream">
-                  </a>
-                  <figcaption>
-                    <h2>Gina's<span> Dream</span></h2>
-                    <a href="https://soundcloud.com/balikglow/ginas-dream-original-mix">
-                      <p class="description">Dreamy Stuff Sounds, Awesome for meditation.
-                        First Track of Franco Helguera that came to light!
+                      </a>
+                    </figure>
+                    <div class="overlay">
+                      <h2>Effect 11</h2>
+                      <p>
+                        <a href="#">LINK HERE</a>
                       </p>
-                    </a>
-                  </figcaption>
-                  </figure>
+                    </div>
+                  </div>
+                  </div>
+
                 </li>
               </ul>
               <li>
@@ -244,7 +253,8 @@
                 <p>
                   Here u will get the best mastering quality with low budget. Awesome for new artists
 
-                  I will get ur track sounding a lot better, if u want to get ur track on road to big labels, this is
+                  I will get your track sounding a lot better, if u want to get ur track on road to big labels, this
+                  is
                   your place.
 
                   Complete services Are:
@@ -260,39 +270,6 @@
                   <br>
 
                 </p>
-
-
-
-
-
-
-
-                <div class="list-services">
-
-                  <figure>
-                    <div class="hovereffect">
-                      <img src="img/mixing.jpg" width="425" height="230" alt="Mixing"
-                        class="img-responsive servicepicture1">
-                      <div class="overlay">
-                        <h2>Prices In USD</h2>
-                        <p class="info">1 Track : 25U$ | 3 Tracks : 50U$</p>
-                      </div>
-                    </div>
-                  </figure>
-
-
-                  <figure>
-                    <div class="hovereffect">
-                      <img src="img/mastering.jpg" width="425" height="230" alt="Mixing"
-                        class="img-responsive servicepicture2">
-                      <div class="overlay">
-                        <h2>Prices In USD</h2>
-                        <p class="info">1 Track : 25U$ | 3 Tracks : 50U$</p>
-                      </div>
-                    </div>
-                  </figure>
-
-                </div>
               </section>
               <!-- CONTACT -->
 
@@ -303,7 +280,8 @@
                     Contact
                   </h2>
                   <p>
-                    Hey! Nice to know that you are interested on contacting me! Here is the form to do that! Just click
+                    Hey! Nice to know that you are interested on contacting me! Here is the form to do that! Just
+                    click
                     the button down below!
                   <p>
                     You will be redirected to a contact form!! complete it, and i will answer you!
@@ -333,13 +311,7 @@
                   $(this).css('background-position', moveX + 'px ' + moveY + 'px')
                 })
               </script>
-              <script type="text/javascript">
-                $('.mywork',).mousemove(function (e) {
-                  var moveY = (e.pageY * -1 / 15)
-                  var moveX = (e.pageX * -1 / 15)
-                  $(this).css('background-position', moveX + 'px ' + moveY + 'px')
-                })
-              </script>
+
 
 
 </body>
@@ -349,5 +321,10 @@
   integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
   integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script>
+  $(window).scroll(function () {
+    $('nav').toggleClass('scrolled', $(this).scrollTop() > 450);
+  });
+</script>
 
 </html>
