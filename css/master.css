@@ -221,7 +221,6 @@ footer {background: radial-gradient(ellipse at bottom left, rgba(104, 128, 138, 
 /* 5 FORM */
 
 /* 6 ANIMATION */
-/*Hover of work images*/
 
 /*Animacion Background navbar*/
 @media screen and (max-width: 1023px) {
@@ -337,7 +336,10 @@ footer {background: radial-gradient(ellipse at bottom left, rgba(104, 128, 138, 
   }
 
 
+/*
+scroll buton
 
+*/
 
 #btnToTop {
 	position: fixed;
@@ -356,12 +358,13 @@ footer {background: radial-gradient(ellipse at bottom left, rgba(104, 128, 138, 
   .fa-arrow-circle-up:hover {
 	  color: rgba(0, 238, 255, 0.9);
 	  font-size: 3em!important;
-	  cursor: pointer;
+	  
 
   }
 
   .fa-arrow-circle-up.scrolled {
 	transition: 0.5s ease;
 	opacity: 1!important;
+	cursor: pointer;
 
 }
