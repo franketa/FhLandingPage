@@ -98,32 +98,36 @@ h2 {text-align: center;}
 .p {margin-bottom: 30px; }
  .contain {padding-left: 10vh; padding-right: 10vh;}
 /* 3 PARTS OF THE WEB */
-.content {padding: 80px 0 20px 0;}
-.who {background: #fff; color: black; border-bottom: 2px solid black; font: 20px 'futura-pt-13';
+.content {padding: 80px 0 0 0;}
+.who {background: #fff; color: black; border-bottom: 2px solid black; font: 23px 'futura-pt-13';
 	border-top: 2px solid black;  }
  .who p {max-width: 1055px; margin: auto; padding-bottom: 3rem;}
 
- .mywork2 {background: linear-gradient( 110.3deg,  rgba(52, 54, 56, 0.616) 4.3%, rgba(20, 189, 175, 0.534) 96.7% ),	 url(/img/blackbg.jpg); background-size: cover ;color: #fff; border-bottom: 2px solid white; text-align: center; font: 20px 'futura-pt-13'; }
+ .mywork2 {background: linear-gradient( 110.3deg,  rgba(52, 54, 56, 0.616) 4.3%, rgba(20, 189, 175, 0.534) 96.7% ),	 url(/img/blackbg.jpg); background-size: cover ;color: #fff;  text-align: center; font: 20px 'futura-pt-13'; }
 .mywork1 { padding-bottom: 50px ; color: #fff ;text-align: center; font: 20px 'futura-pt-13'; background:  #000; background-image: linear-gradient( 110.3deg,  rgb(52, 54, 56) 4.3%, rgb(20, 138, 128) 96.7% );}
- .services {background: linear-gradient(0deg, rgba(0, 104, 64, 0.1), rgba(1, 131, 51, 0.1)), url(/img/whitebg4.png); background-position-x: 8rem ; color: #000000; border-bottom: 2px solid #000000; padding-top: 3vh; }
- .services .title {color: #000000}
+ .services {background: #000 ; color: #fff; border-bottom: 2px solid #000000; padding-top: 3vh; }
+ .services .title {color: #fff}
  .contact {background: url(/img/blackbg6.jpg) ; border-bottom: 1px solid black; background-size: cover;
- color: #fff; text-align: left; font: 20px 'futura-pt-13'; padding-bottom: 3rem; padding-top: 3rem;}
+ color: #fff; text-align: left; font: 22px 'futura-pt-13'; padding-bottom: 5rem; padding-top: 3rem;}
   .container p {max-width: 450px;}
 footer {background: radial-gradient(ellipse at bottom left, rgba(104, 128, 138, 0.4) 10%, rgba(138, 114, 76, 0) 40%), linear-gradient(to bottom, rgba(57, 173, 219, .25), rgba(42, 60, 87, 0.4)), linear-gradient(135deg, #670d10, #092756);
- color: #fff; position: sticky; width: 100%; text-align: center; }
+ color: #fff; position: sticky; width: 100%; text-align: center; font-weight: bold ; font-size: 16px }
 .carousel-item {
 	max-height: 700vh;
 
 }
 
+.btn-succes {width: 150px; font-weight: bold;}
 
+/* DISPLAY NONE SERVICES*/
 
 .itemcar1 {position: relative; height: 70vh;}
 .itemcar2 {position: relative; height: 70vh;}
 .itemcar3 {position: relative; height: 70vh;}
 .sliderino {display: none; max-width: 100%; background-color: rgb(70, 70, 70);}
-.services p {padding-left: 45px; padding-right: 45px; font: 20px 'futura-pt-13';}
+.services p {padding-left: 45px; padding-right: 45px; font: 20px 'futura-pt-13'; margin-bottom: 0;}
+
+
 
 
 
@@ -134,11 +138,92 @@ footer {background: radial-gradient(ellipse at bottom left, rgba(104, 128, 138, 
 }
 
 /* 4 LIST */
+/*Cards hover*/
+
+#cards_landscape_wrap-2{
+	text-align: center;
+	background: #000
+  }
+
+  #cards_landscape_wrap-2 a{
+	text-decoration: none;
+	outline: none;
+  }
+  #cards_landscape_wrap-2 .card-flyer {
+	border-radius: 5px;
+  }
+  #cards_landscape_wrap-2 .card-flyer .image-box{
+	background: #0dd4ca;
+	overflow: hidden;
+	box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.50);
+	border-radius: 5px;
+  }
+  #cards_landscape_wrap-2 .card-flyer .image-box img{
+	-webkit-transition:all .9s ease; 
+	-moz-transition:all .9s ease; 
+	-o-transition:all .9s ease;
+	-ms-transition:all .9s ease; 
+	width: 100%;
+	height: 275px;
+  }
+  #cards_landscape_wrap-2 .card-flyer:hover .image-box img{
+	opacity: 0.7;
+	-webkit-transform:scale(1.15);
+	-moz-transform:scale(1.15);
+	-ms-transform:scale(1.15);
+	-o-transform:scale(1.15);
+	transform:scale(1.15);
+  }
+  #cards_landscape_wrap-2 .card-flyer .text-box{
+	text-align: center;
+  }
+  #cards_landscape_wrap-2 .card-flyer .text-box .text-container{
+	padding: 30px 18px;
+  }
+  #cards_landscape_wrap-2 .card-flyer{
+	background: #FFFFFF;
+	-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-ms-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in;
+	box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.40);
+  }
+  #cards_landscape_wrap-2 .card-flyer:hover{
+	background: #fff;
+	box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.50);
+	-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-ms-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in;
+  }
+  #cards_landscape_wrap-2 .card-flyer .text-box p{
+	margin-top: 10px;
+	margin-bottom: 0px;
+	padding-bottom: 0px; 
+	font-size: 18px;
+	font-weight: 540;
+	letter-spacing: 1px;
+	color: #000000;
+  }
+  #cards_landscape_wrap-2 .card-flyer .text-box h6{
+	margin-top: 0px;
+	margin-bottom: 4px; 
+	font-size: 18px;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-family: 'Roboto Black', sans-serif;
+	letter-spacing: 1px;
+	color: #00acc1;
+  }
 
 /* 5 FORM */
 
 /* 6 ANIMATION */
 /*Hover of work images*/
+
+/*Animacion Background navbar*/
 @media screen and (max-width: 1023px) {
 	.navbar:not(.top-nav-collapse) {
 		background: #1C2331!important;
@@ -250,3 +335,33 @@ footer {background: radial-gradient(ellipse at bottom left, rgba(104, 128, 138, 
 	-ms-transform: scale(1.2);
 	transform: scale(1.2);
   }
+
+
+
+
+#btnToTop {
+	position: fixed;
+	bottom: 7%;
+	right: 2%;
+}
+
+  .fa-arrow-circle-up {
+	color: #fff;
+	position: fixed;
+	bottom: 6%;
+	right: 2%;
+	opacity: 0;
+	transition: 0.5s ease
+  }
+  .fa-arrow-circle-up:hover {
+	  color: rgba(0, 238, 255, 0.9);
+	  font-size: 3em!important;
+	  cursor: pointer;
+
+  }
+
+  .fa-arrow-circle-up.scrolled {
+	transition: 0.5s ease;
+	opacity: 1!important;
+
+}

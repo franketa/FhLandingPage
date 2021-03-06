@@ -76,7 +76,7 @@ table {
 /* 1 LAYOUT */
 html {scroll-behavior: smooth;}
 body { font: 300 20px/1.5 'Roboto Condensed'; }
-body {background: #000000; background-size: 1500px 1200px; color: #fff;}
+body {background: url(/img/blackbg6.jpg); background-size: 1500px 1200px; color: #fff;}
 
 .header {display: flex; align-items: center; justify-content: center; border-bottom: 3px solid #fff; background: black;  }
 .formcont  {color: #fff; text-align: center;}

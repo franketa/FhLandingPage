@@ -18,13 +18,6 @@ An answer will be sent to : <?php echo $_POST["email"]; ?>
 
 </div>
 
-<footer>
-                <div class="copyright">
-                  <p>&copy 2021 - Franco Helguera</p>
-                </div>
-                <div class="social">
-                </div>
-  </footer>
 
 
 <script>
